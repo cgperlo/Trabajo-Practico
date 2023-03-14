@@ -1,0 +1,271 @@
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    background-color: rgb(rgb(83, 104, 116), green, blue);
+}
+
+h1 { /*Titulo principal sitio*/
+    text-align: center;
+    color: rgb(187, 236, 236);
+    background-color: rgb(6, 8, 136);
+    font-size: 40px;
+}
+
+.tituloNav{
+    text-align: center;
+    color: rgb(187, 236, 236);
+    background-color: rgb(6, 8, 136);
+    font-size: 40px;
+}
+
+
+
+#imagenLogo {
+    height: 120px;
+    width: 120px;
+    border-radius: 25%;
+}
+
+.barraNav { /*Barra navegacion superior*/
+    display: flex;
+    height: 20vh;
+    min-height: 90px;
+    justify-content: space-between;
+    background-color: gray;
+    background: linear-gradient(rgb(71, 121, 128), white);
+    align-items: center;
+}
+
+.barraNav ul{ /*Lista barra navegación*/
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+    
+
+.botonNav { /*Item individual barra navegación*/
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.botonNav:hover{ /*Cambio de color al poner puntero encima*/
+    color: whitesmoke;
+}
+
+.divPrincipal{ /*Cajita central pagina inicio*/
+    /*margin-top: 5%;*/
+    padding: 3%;
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(white, rgb(71, 121, 128) );
+}
+
+
+.divPrincipal img{ /*Imagen central*/
+    margin: 0px, auto;
+    margin-top: 5%;
+    border-radius: 5% ;
+    height: 50%;
+    width: 50%;
+}
+
+#imgPrincipal:hover{
+    filter: saturate(200%);
+}
+
+#imgSitioConstruccion:hover{
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+}
+
+ /*   .divPrincipal {
+    overflow:hidden;
+}*/
+
+
+
+.listaServicios{ /*Lista servicios ofrecidos*/
+    padding-top: 5%;
+    padding-bottom: 5% ;
+    background-color: rgb(71, 121, 128);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.tipoA {
+    color: black;
+     margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    font-weight: 800;
+}
+
+.tipoB {
+    color: rgb(238, 222, 171);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    font-weight: 800;
+}
+.footRedes {
+    color: white;
+    display: flex;
+    text-align: center;
+    font-size: large;
+    height: 15vh;
+    min-height: 40px;
+    justify-content: space-between;
+    background-color: rgb(6, 8, 136);   
+    align-items: center;
+}
+
+.footRedes ul{ /*Footer flex*/
+    display: flex;
+    list-style-type: none;
+}
+
+.footRedes ul li{
+    display: flex;
+    margin: 0 rem;
+}
+.iconosRedes{
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.iconosRedes:hover{  /*Estilo iconos redes*/
+    transform: translate(-5%, -5%);
+    transition: all 0.5s ease 0s;
+    color: whitesmoke;
+}
+
+
+.grid-container{  /*Grid de Galeria*/
+    display:grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 50px;
+    margin-bottom: 40px;
+}
+
+.grid-itemTipo{ /*Lista de servicios galeria*/
+    text-align: center;
+    align-content: center;
+    font-size: 3rem;
+}
+
+.embed-container { /*Clase contenedor embebido galeria*/
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-container img { /*Imagenes insertadas galeria*/
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.embed-container iframe { /*Videos insertados galeria*/
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+.divContacto { /*Contenedor formulario de contacto*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+#formContacto{ /*Formato formulario de contacto*/
+    background-color: rgb(201, 201, 220);
+    padding: 40px;
+    display: inline-block;
+    width: 50%;
+}
+
+#formContacto p{
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    display: block;
+}
+
+#formContacto input,textarea{ 
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        resize: none;
+        font-size: 2rem;
+}
+
+#formContacto label{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.divDireccion{ /*Formato de direccion*/
+    text-align: center;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+#marca{
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.mapResponsive{ /*Contenedor para Iframe de Google Maps responsive*/
+    overflow:hidden;
+    padding-bottom:35%;
+    position:relative;
+    height:0;
+}
+
+.mapResponsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.seccionDatos{ /*Formato de datos enviados por formulario*/
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.seccionDatos p{
+    font-size: 3rem;
+    font-style: italic;
+}
